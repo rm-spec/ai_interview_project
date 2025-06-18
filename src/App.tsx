@@ -5,12 +5,12 @@ import  HomePage  from "@/routes/home"
 import AuthenticationLayout from "@/layouts/auth-layout"
 import ProtectRoutes from "@/layouts/protected-routes"
 import {MainLayout} from "@/layouts/main-layout"
-// import Generate from "@/routes/generate"
-// import Dashboard from "@/routes/dashboard"
-// import CreateEditPage from "@/routes/create-edit-page"
-// import MockLoadPage from "@/routes/mock-load-page"
-// import MockInterviewPage from "@/routes/mock-interview-page"
-// import Feedback from "@/routes/feedback"
+import {Generate} from "@/components/generate"
+import { Dashboard } from "@/routes/dashboard"; 
+import {CreateEditPage} from "@/routes/create-edit-page"
+import {MockLoadPage} from "@/routes/mock-load-page"
+import {MockInterviewPage} from "@/routes/mock-interview-page"
+import {Feedback}from "@/routes/feedback"
 import { SignInPage } from "@/routes/sign-in"
 import { SignUpPage} from "@/routes/sign-up"
 const App = () => {
@@ -39,7 +39,7 @@ const App = () => {
           }
         >
           {/* add all the protect routes */}
-          {/* <Route element={<Generate />} path="/generate">
+          <Route element={<Generate />} path="/generate">
             <Route index element={<Dashboard />} />
             <Route path=":interviewId" element={<CreateEditPage />} />
             <Route path="interview/:interviewId" element={<MockLoadPage />} />
@@ -48,7 +48,7 @@ const App = () => {
               element={<MockInterviewPage />}
             />
             <Route path="feedback/:interviewId" element={<Feedback />} />
-          </Route> */}
+          </Route>
         </Route>
         </Routes>
       </Router>
