@@ -4,15 +4,7 @@ export const MainRoutes = [
     href: "/",
   },
   {
-    label: "Contact Us",
-    href: "/contact",
-  },
-  {
-    label: "About Us",
-    href: "/about",
-  },
-  {
-    label: "Services",
-    href: "/services",
-  },
+    label: "Resume Analysis",
+    href: "https://rammathur18113-resumedescriptor-app-hhyzyj.streamlit.app/",
+  }
 ];
